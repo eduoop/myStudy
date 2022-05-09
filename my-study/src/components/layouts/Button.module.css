@@ -1,0 +1,24 @@
+@font-face {
+    font-family: JKAbode-Demo;
+    src: url('../../../public/fonts/JKAbode-Demo.ttf');
+  }
+
+:root {
+    --primary: #02A592;
+}
+
+.btn {
+    padding: .4em .8em;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 16px;
+    font-family: JKAbode-Demo;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .5s ease;
+    letter-spacing: 1px;
+}
+
+
