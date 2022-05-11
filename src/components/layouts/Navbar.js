@@ -40,9 +40,9 @@ function Navbar() {
           <li className={styles.nav_item}
               onClick={onMouseClick}          
           >
-            <Link to="/products" className={styles.nav_links} onClick={closeMobileMenu}>
+            <span className={styles.nav_links} onClick={closeMobileMenu}>
               Opções De Entrada <IoIosArrowDown />
-            </Link>
+            </span>
 
             {dropdown && <DropDown/>}
 
@@ -65,8 +65,14 @@ function Navbar() {
               Como funciona
             </Link>
           </li>
+
+          <li className={`${styles.nav_item} ${styles.button_able}`}>
+          <Button />
+          </li>
         </ul>
-        <Button/>
+        <div className={styles.button_disable}>
+        <Button />
+        </div>
       </nav>
     </>
   )

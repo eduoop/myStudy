@@ -11,9 +11,9 @@
     padding: .4em .8em;
     background: transparent;
     outline: none;
-    border: 1px solid var(--primary);
+    border: 1.2px solid var(--primary);
     color: var(--primary);
-    border-radius: 16px;
+    border-radius: 17px;
     font-family: JKAbode-Demo;
     font-size: 1.1em;
     cursor: pointer;

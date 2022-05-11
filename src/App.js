@@ -1,11 +1,13 @@
-import Navbar from '../src/components/layouts/Navbar'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './App.module.css'
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </Router>
   )
 }
