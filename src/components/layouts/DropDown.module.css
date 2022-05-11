@@ -8,18 +8,19 @@
 }
 
 .dropdown_menu li {
-  background: #1888ff;
+  background: #21242A;
   transition: .5s;
   cursor: pointer;
+}
+
+
+.dropdown_menu li:hover {
+    background: #02A592;
 }
 
 .dropdown_menu li > a {
     text-decoration: none;
  }
-
-.dropdown_menu li:hover {
-    background: #5cabff;
-}
 
 .dropdown_menu.clicked {
     display: none;

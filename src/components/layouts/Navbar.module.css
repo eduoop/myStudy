@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     flex-direction: row;
   }
   
@@ -48,6 +48,7 @@
     align-items: center;
     gap: .1em;
     cursor: pointer;
+    font-weight: 100;
   }
   
   .nav_links:hover {
@@ -86,10 +87,15 @@
       opacity: 1;
       transition: all 0.5s ease;
     }
+
+    .none_display {
+      display: none;
+    }
   
     .nav_menu.active {
       background: #242222;
       left: 0;
+      width: 75vw;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
@@ -103,7 +109,7 @@
     }
   
     .nav_links:hover {
-      background-color: #1888ff;
+      background-color: #21242A;
       border-radius: 0;
     }
   
