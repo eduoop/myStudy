@@ -13,10 +13,10 @@ const DropDown = () => {
 
   return (
     <>
-        <ul onClick={handleClick} className={click ? `${styles.dropdown_menu} ${styles.clicked}` : `${styles.dropdown_menu}`}>
+        <ul onClick={handleClick} className={click ? `${styles.dropdown_menu} ${styles.dropdown_menu.clicked}` : `${styles.dropdown_menu}`}>
             {MenuItems.map((item, index) => (
                 <li key={index}>
-                    <Link className={item.cName} to={item.path} onClick={() => setClick(false)}>
+                    <Link className={styles.dropdown_link} to={item.path} onClick={() => setClick(false)}>
                         {item.title}
                     </Link>
                 </li>

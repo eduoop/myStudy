@@ -18,19 +18,30 @@ function Navbar() {
     setClick(false)
   }
 
+  const onMouseClick = () => {
+    if(window.innerWidth < 960) {
+      setDropdown(false)
+    } else {
+      setDropdown(!dropdown)
+    }
+  }
+
+
   return (
     <>
       <nav className={styles.navbar}>
-        <Link to='/' className={styles.navbar_logo}>
-          Study.me
-        </Link>
         <div className={styles.menu_icon} onClick={handleClick}>
-          <i>{click ? <MdOutlineClose/> : <AiOutlineMenu/>}</i>
+          <i className={styles.c_white}>{click ? <MdOutlineClose/> : <AiOutlineMenu/>}</i>
         </div>
+        <Link to='/' className={styles.navbar_logo}>
+          Study<span className={styles.dot_logo}>.</span>me
+        </Link>
         <ul className={click ? `${styles.nav_menu} ${styles.active}` : `${styles.nav_menu}`}>
-          <li className={styles.nav_item}>
+          <li className={styles.nav_item}
+              onClick={onMouseClick}          
+          >
             <Link to="/products" className={styles.nav_links} onClick={closeMobileMenu}>
-              Produtos <IoIosArrowDown />
+              Opções De Entrada <IoIosArrowDown />
             </Link>
 
             {dropdown && <DropDown/>}

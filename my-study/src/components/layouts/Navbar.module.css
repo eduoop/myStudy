@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
+    flex-direction: row;
   }
   
   .navbar_logo {
@@ -20,8 +21,13 @@
     list-style: none;
     text-align: center;
     width: auto;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2rem;
+  }
+
+  .dot_logo {
+      color: #05A897;
+      font-size: 1.2em;
   }
   
   .nav_item {
@@ -38,6 +44,9 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: .1em;
   }
   
   .nav_links:hover {
@@ -53,12 +62,13 @@
   .menu_icon {
     display: none;
   }
+
+  .c_white {
+    color: white;
+}
   
   @media screen and (max-width: 960px) {
-    .NavbarItems {
-      position: relative;
-    }
-  
+
     .nav_menu {
       display: flex;
       flex-direction: column;
@@ -93,8 +103,8 @@
   
     .navbar_logo {
       position: absolute;
-      top: .6em;
-      left: 0;
+      top: -5px;
+      right: 2.1em;
       transform: translate(25%, 50%);
     }
   
@@ -102,7 +112,7 @@
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      left: 50px;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
