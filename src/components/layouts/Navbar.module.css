@@ -49,6 +49,8 @@
     gap: .1em;
     cursor: pointer;
     font-weight: 100;
+    color: #05a8989a;
+
   }
   
   .nav_links:hover {
@@ -76,6 +78,10 @@
 
 .zi {
   z-index: 5;
+}
+
+.color_white {
+  color: white;
 }
   
   @media screen and (max-width: 960px) {

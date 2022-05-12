@@ -1,5 +1,5 @@
 import Navbar from '../../../src/components/layouts/Navbar'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Home.module.css'
 import {TiMediaPlayOutline} from 'react-icons/ti'
 import Robot from '../../images/study.png'
@@ -7,7 +7,7 @@ import Robot from '../../images/study.png'
 const Home = () => {
   return (
     <div className={styles.bod}>
-      <Navbar />
+      <Navbar/>
 
       <div className={styles.container}>
           <div className={styles.title}>

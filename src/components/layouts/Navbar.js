@@ -2,14 +2,12 @@ import styles from './Navbar.module.css'
 import { useState } from 'react'
 import Button from './Button'
 import DropDown from './DropDown'
-import { findDOMNode } from 'react-dom'
-import { ReactDOM } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoIosArrowDown } from 'react-icons/io';
 
-function Navbar() {
+function Navbar({value}) {
 
   const [click, setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false)
@@ -53,7 +51,7 @@ function Navbar() {
               onClick={onMouseClick}          
           >
 
-            <Link onClickCapture={screenWidth} to={path} className={styles.nav_links} onClick={closeMobileMenu}>
+            <Link onClickCapture={screenWidth} to={path} className={`${styles.nav_links} ${styles.c_white}`} onClick={closeMobileMenu}>
               Opções De Entrada <IoIosArrowDown className={styles.none_display}/>
             </Link>
 
