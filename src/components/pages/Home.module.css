@@ -5,9 +5,10 @@
 
   .container {
       display: flex;
-      gap: 17em;
+      gap: 10em;
       justify-content: space-around;
       align-items: center;
+      flex-wrap: wrap;
   }
 
 .bod {
@@ -22,7 +23,7 @@
     color: #05A897;
     font-size: 6em;
     position: relative;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .title span{
@@ -49,4 +50,5 @@
 
 .image_container img{
     width: 200px;
+    margin-left: 5em;
 }

@@ -19,6 +19,8 @@ const Home = () => {
               <img src={Robot} alt='My.study'/>
           </div>
       </div>
+
+      <div className={styles.overlay}></div>
     </div>
   )
 }

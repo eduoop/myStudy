@@ -43,7 +43,7 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.menu_icon} onClick={handleClick}>
-          <i className={styles.c_white}>{click ? <MdOutlineClose/> : <AiOutlineMenu/>}</i>
+          <i className={styles.c_white}>{click ? <MdOutlineClose className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
         </div>
         <Link to='/' className={styles.navbar_logo}>
           Study<span className={styles.dot_logo}>.</span>me
@@ -85,6 +85,7 @@ function Navbar() {
         <div className={styles.button_disable}>
         <Button />
         </div>
+        { click && <div onClick={closeMobileMenu} className={styles.overlay}></div> }
       </nav>
     </>
   )

@@ -22,6 +22,7 @@ const DropDown = () => {
                 </li>
             ))}
         </ul>
+        <div className={styles.overlay}></div>
     </>
   )
 }
