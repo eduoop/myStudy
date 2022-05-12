@@ -3,6 +3,12 @@
     src: url('../../../public/fonts/JKAbode-Demo.ttf');
   }
 
+  .container {
+      display: flex;
+      gap: 17em;
+      justify-content: space-around;
+      align-items: center;
+  }
 
 .bod {
     width: 100vw;
@@ -10,14 +16,21 @@
     background: linear-gradient(to right,#0A1622, #2F4962);
 }
 
-.title {
-}
 
 .title p {
     font-family: JKAbode-Demo;
     color: #05A897;
     font-size: 6em;
+    position: relative;
+    margin-top: 2em;
 }
+
+.title span{
+    position: absolute;
+    top: -14px;
+    left: 100px;
+}
+
 .title a {
     font-family: JKAbode-Demo;
     color: white;
@@ -28,4 +41,12 @@
     display: flex;
     align-items: center;
     width: 157px;
+}
+
+.image_container {
+    margin-top: 7em;
+}
+
+.image_container img{
+    width: 200px;
 }
