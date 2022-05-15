@@ -5,7 +5,6 @@
 
   .container {
       display: flex;
-      gap: 10em;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
@@ -53,4 +52,55 @@
 .image_container img{
     width: 200px;
     margin-left: 5em;
+}
+
+.mobile_description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    width: 400px;
+    color: #54656D;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .bod {
+        background: url('../../images/study\ background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center
+    }
+    .image_container img {
+        display: none;
+    }
+
+    .title {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        margin-top: 2em;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .title p {
+        color: white;
+        font-size: 3em;
+    }
+
+    .title a {
+        margin-top: 0;
+    }
+
+    .mobile_description {
+        display: block;
+    }
+
+    .title span{
+        display: none;
+    }
 }

@@ -11,7 +11,8 @@ const Home = () => {
 
       <div className={styles.container}>
           <div className={styles.title}>
-              <p >Ola <span>´</span> , <br/> caro aluno</p>
+              <p>Ola <span>´</span> , <br className={styles.break}/> caro aluno</p>
+              <h2 className={styles.mobile_description}>Faça login para obter uma experiência aprimorada!</h2>
               <a href=''><TiMediaPlayOutline/> Video introdutivo</a>
           </div>
 

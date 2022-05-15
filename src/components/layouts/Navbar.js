@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineClose } from 'react-icons/md';
 import { IoIosArrowDown } from 'react-icons/io';
+import Robozinho  from './robozinhoperfil.png'
 
-function Navbar({value}) {
+function Navbar() {
 
   const [click, setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false)
@@ -42,6 +43,9 @@ function Navbar({value}) {
       <nav className={styles.navbar}>
         <div className={styles.menu_icon} onClick={handleClick}>
           <i className={styles.c_white}>{click ? <MdOutlineClose className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
+        </div>
+        <div className={styles.robozino_container}>
+          <img src={Robozinho} alt='study.me'/>
         </div>
         <Link to='/' className={styles.navbar_logo}>
           Study<span className={styles.dot_logo}>.</span>me
