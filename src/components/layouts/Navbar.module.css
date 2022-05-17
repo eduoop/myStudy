@@ -94,8 +94,8 @@
     .robozino_container img {
       display: block;
       position: absolute;
-      right: 2%;
-      top: 15px;
+      right: 20px;
+      top: 3%;
     }
 
     .overlay {
@@ -111,12 +111,13 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90.2vh;
+      height: 88.5vh;
       position: absolute;
       top: 80px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      z-index: 3;
     }
 
     .none_display {

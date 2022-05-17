@@ -7,7 +7,6 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      flex-wrap: wrap;
   }
 
 .bod {
@@ -59,11 +58,35 @@
     font-weight: 100;
     font-size: 20px;
     width: 400px;
-    color: #54656D;
+    display: none;
+}
+
+.ro_bg {
     display: none;
 }
 
 @media screen and (max-width: 600px) {
+
+    .ro_bg {
+        display: block;
+        width: 100vw;
+        height: 35vh;
+        background: #0A1622;
+        margin-top: 17vh;
+        border-radius: 17px;
+    }
+
+    .ro_bg img {
+        width: 170px;
+        margin-left: 64%;
+        position: absolute;
+        top: 54%;
+    }
+
+    .title a {
+        padding: 0.3em 0.9em;
+    }
+
     .bod {
         background: url('../../images/study\ background.jpg');
         background-repeat: no-repeat;
@@ -79,8 +102,9 @@
         padding: 1em;
         display: flex;
         flex-direction: column;
-        gap: 1.7rem;
+        gap: 1.4rem;
         margin-top: 2em;
+        margin-left: 3em;
     }
 
     .break {
@@ -89,7 +113,13 @@
 
     .title p {
         color: white;
-        font-size: 3em;
+        font-size: 2.5em;
+        width: 257px;
+    }
+
+    .title h2 {
+        font-size: 1em;
+        color: #54656D;
     }
 
     .title a {
@@ -101,6 +131,8 @@
     }
 
     .title span{
-        display: none;
+        position: absolute;
+        top: -6px;
+        left: 43px;
     }
 }
