@@ -7,6 +7,9 @@ import Study from '../../images/studys.png'
 
 
 const Home = () => {
+
+  const year = new Date().getFullYear()
+
   return (
     <div className={styles.bod}>
       <Navbar/>
@@ -24,8 +27,8 @@ const Home = () => {
       </div>
 
       <div className={styles.ro_bg}>
-        <p></p>
         <img src={Study} alt='study.me'/>
+        <p>@{year} HorizonTech Todos os direitos reservados</p>
       </div>
 
     </div>
