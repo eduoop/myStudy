@@ -72,7 +72,7 @@
         width: 100vw;
         height: 35vh;
         background: #0A1622;
-        margin-top: 13vh;
+        margin-top: 28%;
         border-radius: 17px;
     }
 
@@ -90,7 +90,6 @@
         width: 170px;
         position: absolute;
         top: 53%;
-        right: 0%;
     }
 
     .title a {
@@ -98,7 +97,7 @@
     }
 
     .bod {
-        background: url('../../images/study\ background.jpg');
+        background: linear-gradient(to bottom, #181717, #49153e);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
