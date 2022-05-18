@@ -89,7 +89,7 @@
     .ro_bg img {
         width: 170px;
         position: absolute;
-        top: 53%;
+        top: 53vh;
     }
 
     .title a {
