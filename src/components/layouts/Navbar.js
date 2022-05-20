@@ -42,7 +42,7 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.menu_icon} onClick={handleClick}>
-          <i className={styles.c_white}>{click ? <MdOutlineClose className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
+          <i className={styles.c_white}>{click ? <AiOutlineMenu className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
         </div>
         <div className={styles.robozino_container}>
           <img src={Robozinho} alt='study.me'/>
