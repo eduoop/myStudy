@@ -2,10 +2,9 @@
     background: transparent;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    gap: 4.5em;
     align-items: center;
-    font-size: 1.1rem;
-    flex-direction: row;
+    font-size: 17px;
   }
   
   .navbar_logo {
@@ -22,7 +21,8 @@
     text-align: center;
     width: auto;
     justify-content: center;
-    margin-right: 2rem;
+    margin-left: 9rem;
+    margin-right: 10em;
   }
 
   .dot_logo {
@@ -41,7 +41,6 @@
   }
   
   .nav_links {
-    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: flex;
@@ -49,12 +48,11 @@
     gap: .1em;
     cursor: pointer;
     font-weight: 100;
-    color: #05a8989a;
-
+    color: #718FC8;
   }
   
   .nav_links:hover {
-    background-color: #21242A;
+    background-color: #2b3549af;
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }

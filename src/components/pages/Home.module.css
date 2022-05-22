@@ -3,23 +3,51 @@
     src: url('../../../public/fonts/JKAbode-Demo.ttf');
   }
 
-  .container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-  }
-
 .bod {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right,#0A1622, #2F4962);
+    background: #070926;
+    overflow-y: hidden;
+}
+
+.wave {
+    background: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1369px;
+    height: 325px;
+    display: none;
+}
+
+.wave_container {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.wave_container img {
+    width: 1370px;
+    height: 350px;
+    overflow-x: hidden;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-left: 6em;
+    margin-top: 2em;
 }
 
 
-.title p {
+.title h1 {
     font-family: JKAbode-Demo;
-    color: #05A897;
-    font-size: 6em;
+    color: #718FC8;
+    font-size: 5em;
+    font-weight: 200;
     position: relative;
     margin-top: 1em;
 }
@@ -27,29 +55,53 @@
 .title span{
     position: absolute;
     top: -14px;
-    left: 100px;
+    left: 82px;
 }
 
 .title a {
     font-family: JKAbode-Demo;
     color: white;
-    background: #05A897;
-    padding: 0.7em 0.9em;
+    padding: 0.4em 0.5em;
     text-decoration: none;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    width: 10em;
     font-size: 1.1em;
+}
+
+.links_container {
     margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.donate_link {
+    background: #05A897;
+}
+
+.video_link {
+    background: #718FC8;
+}
+
+.title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    color: #83868B;
+    width: 480px;
 }
 
 .image_container {
-    margin-top: 7em;
+    position: absolute;
+    top: 215px;
+    right: 99px;
 }
 
 .image_container img{
-    width: 200px;
+    width: 300px;
     margin-left: 5em;
 }
 
@@ -114,10 +166,6 @@
         gap: 1.4rem;
         margin-top: 2em;
         margin-left: 3em;
-    }
-
-    .break {
-        display: none;
     }
 
     .title p {
