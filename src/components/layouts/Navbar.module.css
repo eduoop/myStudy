@@ -162,6 +162,8 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
+  gap: 1.2em;
+  display: none;
 }
 
 .nav_footer svg{
@@ -175,6 +177,10 @@
 }
   
   @media screen and (max-width: 960px) {
+
+    .nav_footer {
+      display: block;
+    }
 
     .flex {
       flex-direction: column;
