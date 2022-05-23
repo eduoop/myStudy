@@ -5,7 +5,9 @@ import DropDown from './DropDown'
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
 import Person  from './person.png'
+import Head  from './robohead.png'
 
 function Navbar() {
 
@@ -49,7 +51,24 @@ function Navbar() {
         <Link to='/' className={styles.navbar_logo}>
           Study<span className={styles.dot_logo}>.</span>me
         </Link>
+
         <ul className={click ? `${styles.nav_menu} ${styles.active}` : `${styles.nav_menu}`}>
+
+          <div className={styles.nav_header}>
+            <div className={styles.nav_header_items}>
+              <div className={styles.nav_header_description}>
+                <h1>study<span>.</span>me</h1>
+                <p>Seja bem vindo ao seu site de tarefas <br/> mais queridinho do brasil!</p>
+              </div>
+              <a href=''>
+                <div className={styles.donate}>
+                  <img src={Head}/>
+                  <p> doar para o site</p>
+                </div>
+                <IoIosArrowForward/>
+              </a>
+            </div>
+          </div>
           <li className={styles.nav_item}
               onClick={onMouseClick}          
           >

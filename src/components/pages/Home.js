@@ -25,7 +25,7 @@ const Home = () => {
 
           <div className={styles.title}>
               <h1>Ola, <span>´</span> caro aluno!</h1>
-              <p>Seja bem vindo ao seu site de tarefas mais queridinho do brasil</p>
+              <p>Seja bem vindo ao seu site de tarefas mais queridinho do brasil!</p>
               <h2 className={styles.mobile_description}>Faça login para obter uma experiência <br/> aprimorada!
               </h2>
               <div className={styles.links_container}>
