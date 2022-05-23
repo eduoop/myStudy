@@ -179,7 +179,7 @@
   @media screen and (max-width: 960px) {
 
     .nav_footer {
-      display: block;
+      display: flex;
     }
 
     .flex {
