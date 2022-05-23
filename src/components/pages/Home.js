@@ -18,23 +18,32 @@ const Home = () => {
       <div className={styles.image_container}>
         <img src={Study} alt='My.study'/>
       </div>
+      <div className={styles.copy}>
+        <p>@{year} HorizonTech - Todos os direitos reservados</p>
+      </div>
       <Navbar/>
 
           <div className={styles.title}>
               <h1>Ola, <span>´</span> caro aluno!</h1>
               <p>Seja bem vindo ao seu site de tarefas mais queridinho do brasil</p>
-              <h2 className={styles.mobile_description}>Faça login para obter uma experiência <br/> aprimorada!</h2>
+              <h2 className={styles.mobile_description}>Faça login para obter uma experiência <br/> aprimorada!
+              </h2>
               <div className={styles.links_container}>
                 <a href='' className={styles.video_link}><TiMediaPlayOutline/> Video introdutivo</a>
                 <a href='' className={styles.donate_link}>  Doar para o site</a>
               </div>
+          </div>
 
-      </div>
-
-      <div className={styles.ro_bg}>
-        <img src={Study} alt='study.me'/>
-        <p>@{year} HorizonTech Todos os direitos reservados</p>
-      </div>
+          <div className={styles.title_mobile_container}>
+            <div className={styles.title_main}>
+              <h1>Ola,<span>´</span> seja bem vindo <br/> caro aluno</h1>
+              <p>Faça login para obter uma experiência aprimorada!</p>
+              <div className={styles.links_container_mobile}>
+                <a href='' className={styles.mobile_login}>Entrar</a>
+                <a href='' className={styles.mobile_video}><TiMediaPlayOutline/> Video introdutivo</a>
+              </div>
+            </div>
+          </div>
 
       <div className={styles.wave}></div>
     </div>

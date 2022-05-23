@@ -4,9 +4,8 @@ import Button from './Button'
 import DropDown from './DropDown'
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai';
-import { MdOutlineClose } from 'react-icons/md';
 import { IoIosArrowDown } from 'react-icons/io';
-import Robozinho  from './robozinhoperfil.png'
+import Person  from './person.png'
 
 function Navbar() {
 
@@ -45,7 +44,7 @@ function Navbar() {
           <i className={styles.c_white}>{click ? <AiOutlineMenu className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
         </div>
         <div className={styles.robozino_container}>
-          <img src={Robozinho} alt='study.me'/>
+          <img src={Person} alt='study.me'/>
         </div>
         <Link to='/' className={styles.navbar_logo}>
           Study<span className={styles.dot_logo}>.</span>me

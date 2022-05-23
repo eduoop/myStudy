@@ -26,8 +26,8 @@
   }
 
   .dot_logo {
-      color: #05A897;
-      font-size: 1.2em;
+    color: #05A897;
+    font-size: .8em;
   }
   
   .nav_item {
@@ -83,7 +83,7 @@
 }
 
 .robozino_container img {
-  width: 50px;
+  width: 25px;
   display: none;
 }
   
@@ -116,6 +116,8 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 3;
+      margin-right: 0;
+      margin-left: 0;
     }
 
     .none_display {
@@ -145,7 +147,7 @@
   
     .navbar_logo {
       position: absolute;
-      top: 3px;
+      top: 0.7em;
       right: 45%;
       transform: translate(25%, 50%);
     }
