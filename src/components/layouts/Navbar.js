@@ -69,41 +69,49 @@ function Navbar() {
               </a>
             </div>
           </div>
-          <li className={styles.nav_item}
-              onClick={onMouseClick}          
-          >
 
-            <Link onClickCapture={screenWidth} to={path} className={`${styles.nav_links} ${styles.c_white}
-          `} onClick={closeMobileMenu}>
-              Opções De Entrada <IoIosArrowDown className={styles.none_display}/>
-            </Link>
+          <div className={styles.flex}>
+            <li className={styles.nav_item}
+                onClick={onMouseClick}          
+            >
 
-            {dropdown && <DropDown/>}
-          </li>
+              <Link onClickCapture={screenWidth} to={path} className={`${styles.nav_links} ${styles.c_white}
+            `} onClick={closeMobileMenu}>
+                Opções De Entrada <IoIosArrowDown className={styles.none_display}/>
+              </Link>
 
-          <span className={styles.borders_menu}></span>
+              {dropdown && <DropDown/>}
+            </li>
 
-          <li className={styles.nav_item}>
-            <Link to="/about-us" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
-              Sobre nós
-            </Link>
-          </li>
+            <span className={styles.borders_menu}></span>
 
-          <span className={styles.borders_menu}></span>
+            <li className={styles.nav_item}>
+              <Link to="/about-us" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
+                Sobre nós
+              </Link>
+            </li>
 
-          <li className={styles.nav_item}>
-            <Link to="/support" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
-              Ajuda
-            </Link>
-          </li>
+            <span className={styles.borders_menu}></span>
 
-          <span className={styles.borders_menu}></span>
+            <li className={styles.nav_item}>
+              <Link to="/support" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
+                Ajuda
+              </Link>
+            </li>
 
-          <li className={styles.nav_item}>
-            <Link to="/how-it-works" className={styles.nav_links} onClick={closeMobileMenu}>
-              Buscar
-            </Link>
-          </li>
+            <span className={styles.borders_menu}></span>
+
+            <li className={styles.nav_item}>
+              <Link to="/how-it-works" className={styles.nav_links} onClick={closeMobileMenu}>
+                Buscar
+              </Link>
+            </li>
+          </div>
+
+          <div className={styles.nav_footer}>
+            <IoIosArrowDown/>
+            <p>Considere fazer uma doação ao site <br/> para que ele possa permanecer vivo.</p>
+          </div>
         </ul>
         <div className={styles.button_disable}>
         <Button />
