@@ -41,7 +41,7 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.menu_icon} onClick={handleClick}>
-          <i className={styles.c_white}>{click ? <AiOutlineMenu className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
+          <i>{click ? <AiOutlineMenu className={styles.zi}/> : <AiOutlineMenu className={styles.zi}/>}</i>
         </div>
         <div className={styles.robozino_container}>
           <img src={Person} alt='study.me'/>
@@ -54,33 +54,36 @@ function Navbar() {
               onClick={onMouseClick}          
           >
 
-            <Link onClickCapture={screenWidth} to={path} className={`${styles.nav_links} ${styles.c_white}`} onClick={closeMobileMenu}>
+            <Link onClickCapture={screenWidth} to={path} className={`${styles.nav_links} ${styles.c_white}
+          `} onClick={closeMobileMenu}>
               Opções De Entrada <IoIosArrowDown className={styles.none_display}/>
             </Link>
 
             {dropdown && <DropDown/>}
           </li>
 
-          <li className={styles.nav_item}>
-            <Link to="/support" className={styles.nav_links} onClick={closeMobileMenu}>
-              Suporte
-            </Link>
-          </li>
+          <span className={styles.borders_menu}></span>
 
           <li className={styles.nav_item}>
-            <Link to="/about-us" className={styles.nav_links} onClick={closeMobileMenu}>
+            <Link to="/about-us" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
               Sobre nós
             </Link>
           </li>
 
+          <span className={styles.borders_menu}></span>
+
           <li className={styles.nav_item}>
-            <Link to="/how-it-works" className={styles.nav_links} onClick={closeMobileMenu}>
-              Como funciona
+            <Link to="/support" className={`${styles.nav_links}`} onClick={closeMobileMenu}>
+              Ajuda
             </Link>
           </li>
 
-          <li className={`${styles.nav_item} ${styles.button_able}`}>
-          <Button />
+          <span className={styles.borders_menu}></span>
+
+          <li className={styles.nav_item}>
+            <Link to="/how-it-works" className={styles.nav_links} onClick={closeMobileMenu}>
+              Buscar
+            </Link>
           </li>
         </ul>
         <div className={styles.button_disable}>

@@ -89,6 +89,15 @@
   
   @media screen and (max-width: 960px) {
 
+    .c_white {
+      color: #718FC8;
+  }
+
+  .borders_menu {
+    border-bottom: 1px solid #718FC8 ;
+    margin: 0 .5em;
+  }
+
     .robozino_container img {
       display: block;
       position: absolute;
@@ -137,7 +146,7 @@
       text-align: center;
       padding: 2rem;
       width: 100%;
-      display: table;
+      font-size: 18px;
     }
   
     .nav_links:hover {
@@ -160,6 +169,10 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+    }
+
+    .menu_icon svg {
+      color: white;
     }
   
     .nav_links_mobile {
