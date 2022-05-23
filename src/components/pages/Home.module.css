@@ -24,13 +24,13 @@
 
 .wave_container {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
 }
 
 .wave_container img {
-    width: 415px;
-    height: 255px;
+    width: 1370px;
+    height: 350px;
     overflow-x: hidden;
 }
 
@@ -201,8 +201,8 @@
     }
 
     .wave_container img {
-        width: 428px;
-        height: 235px;
+        width: 415px;
+        height: 255px;
         overflow-x: hidden;
     }
 
