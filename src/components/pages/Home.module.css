@@ -195,9 +195,9 @@
 
     .copy {
         position: absolute;
-        right: 9px;
+        right: 30px;
         bottom: 9px;
-        font-size: .5em;
+        font-size: .4em;
     }
 
     .wave_container img {
