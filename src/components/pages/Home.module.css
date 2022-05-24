@@ -10,22 +10,11 @@
     overflow-y: hidden;
 }
 
-.wave {
-    background: url('./background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 1369px;
-    height: 325px;
-    display: none;
-}
-
 .wave_container {
     position: absolute;
     bottom: 0;
     right: 0;
+    overflow-y: hidden;
 }
 
 .wave_container img {
