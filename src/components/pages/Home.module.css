@@ -18,9 +18,9 @@
 }
 
 .wave_container img {
-    width: 1370px;
     height: 350px;
     overflow-y: hidden;
+    width: 1430px;
 }
 
 .title {
