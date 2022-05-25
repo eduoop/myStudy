@@ -20,7 +20,7 @@
 .wave_container img {
     width: 1370px;
     height: 350px;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .title {
@@ -196,8 +196,8 @@
     }
 
     .image_container {
-        top: 500px;
         right: 10px;
+        top: 56vh;
     }
 
     .image_container img{
