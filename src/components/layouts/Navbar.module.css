@@ -17,12 +17,12 @@
   
   .nav_menu {
     display: flex;
+    justify-content: center;
     list-style: none;
+    margin-left: 16vw;
+    margin-right: 16vw;
     text-align: center;
     width: auto;
-    justify-content: center;
-    margin-left: 9rem;
-    margin-right: 10em;
   }
 
   .dot_logo {
