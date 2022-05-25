@@ -11,8 +11,8 @@
 }
 
 .wave_container {
-    position: absolute;
-    bottom: -2vh;
+   position: absolute;
+    bottom: -1vh;
     right: 0;
     overflow-y: hidden;
 }
